@@ -1,0 +1,54 @@
+﻿@media only screen and (min-width:800px) {
+
+    /*NAVIGATION*/
+    nav select {
+        display: none;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+        nav ul {
+            display: block;
+            margin-left: 2%;
+            border-left: solid 1px rgba(255,255,255,.3);
+        }
+
+            /*main menu items float side by side */
+            nav ul li {
+                float: left;
+            }
+
+                nav ul li a {
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    border-right: solid 1px rgba(255,255,255,.3);
+                    font-size: .9em;
+                    padding: .7em .9em;
+                }
+
+                nav ul li.active > a {
+                    background-color: #ff7200;
+                }
+                /* rules for submenu items*/
+                nav ul li ul {
+                    z-index: 99;
+                    position: absolute;
+                    margin: 0;
+                    left: -999em;
+                    width: 10em;
+                    background-color: #b00;
+                }
+
+                    nav ul li ul li {
+                        float: none;
+                        border-bottom: solid 1px rgba(0,0,0,.3);
+                        border-right: none;
+                    }
+
+        nav li:hover ul {
+            left: auto;
+        }
+}
