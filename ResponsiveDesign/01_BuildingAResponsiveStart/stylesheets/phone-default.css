@@ -1,0 +1,18 @@
+﻿
+/* Prevents iPhone from resizing in landscape mode*/
+html {
+    -webkit-text-size-adjust: none;
+}
+
+/* apply natural box layout model to all elements*/
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: red;
+}
