@@ -1,0 +1,22 @@
+﻿@media only screen and (min-width:1141px) {
+    /* ----- BANNER ----- */
+    #banner {
+        background-image: url(../photos/hero-desktop.jpg);
+        height: 500px;
+        background-position: center;
+    }
+
+
+    header, nav, .row, footer {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+        nav ul li a {
+            transition: background .3s linear;
+        }
+
+            nav ul li a:hover {
+                background-color: rgba(0,0,0,.5);
+            }
+}

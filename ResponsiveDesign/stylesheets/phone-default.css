@@ -47,7 +47,13 @@ header {
         margin-top: .75em;
     }
 
-
+/* ----- BANNER ----- */
+#banner {
+    background-image: url(../photos/hero-phone.jpg);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    height: 200px;
+}
 
 
 /* ----- NAVIGATION STUFF HERE -----*/
@@ -109,9 +115,31 @@ nav ul {
     }
 /* ----- COLUMN -----*/
 
-.column-12, column-6, column-4 {
+.column-3, .column-4, .column-6, .column-9, .column-12 {
+    width: 100%;
     padding: .5em 2%;
 }
+
+
+/* ----- PHOTO STYLING -----*/
+figure.col4, figure.col6 {
+    width: 48%;
+    margin-left: 2%;
+    float: right;
+    border: 1px solid #999;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .8em;
+    padding: .3em 0;
+}
+
+figure.col4 img, figure.col6 img {
+    width: 100%;
+}
+
+
 /* ----- FOOTER -----*/
 #footerWrapper {
     background-color: #979791;

@@ -1,0 +1,39 @@
+﻿@media only screen and (min-width:641px) {
+    /* ----- BANNER ----- */
+    #banner {
+        background-image: url(../photos/hero-tablet.jpg);
+        height: 400px;
+    }
+
+    /* -----NAVIGATION-----*/
+    nav ul li a br {
+        display: none;
+    }
+    /* -----CONTENT-----*/
+    /* -----COLUMNS-----*/
+    .column-3, .column-4, .column-6, .column-9, .column-12 {
+        float: left;
+    }
+
+    .column-3 {
+        width: 25%;
+    }
+
+    .column-4 {
+        width: 33.3333333%;
+    }
+
+    .column-6 {
+        width: 50%;
+    }
+
+    .column-9 {
+        width: 75%;
+    }
+
+
+    /* ----- PHOTO STYLING -----*/
+    figure.col4 {
+        width: 31.333%;
+    }
+}

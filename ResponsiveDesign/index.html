@@ -14,6 +14,16 @@
         <meta name="viewport" content="width=device-width, inital-scale=1, maximun-scale=1">
 
 
+        <!--picturefill js-->
+        <script>
+            // Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
+            document.createElement("picture");
+        </script>
+        <script async="true" src="js/picturefill.min.js"></script>
+
+
+
+
         <!--Style sheets-->
         <link href="stylesheets/reset.css" rel="stylesheet" />
         <link href="stylesheets/phone-default.css" rel="stylesheet" />
@@ -29,6 +39,9 @@
 
     </head>
     <body>
+        <div id="banner"></div>
+
+
         <div id="headerWrapper">
             <header>
                 <h1>Your Lollipop Shop</h1>
@@ -54,7 +67,33 @@
 
         <div id="contentWrapper">
             <div class="row">
+                <div class="column-12"><a href="https://github.com/scottjehl/picturefill">PictureFill.js used in the example download here</a></div>
+            </div>
+            <div class="row">
                 <div class="column-12"><h1>OUR SPECIALS</h1></div>
+            </div>
+            <div class="row">
+                <div class="column-12">
+                    <figure class="col4">
+                        <img src="photos\hearts.jpg" />
+                        <figcaption>Lollipop Heart</figcaption>
+                    </figure>
+                    <p>
+                        Phasellus et neque vitae justo consectetur vulputate. Quisque sodales scelerisque vulputate. Curabitur ac neque ut leo accumsan tincidunt nec mollis ligula. In porttitor gravida turpis, a lobortis enim tempor id. Etiam vehicula, tellus non mollis mattis, risus leo molestie diam, vitae tempor nisl odio at ex. Mauris euismod est vel condimentum lobortis. Sed tristique nunc in tortor interdum vehicula. Quisque suscipit libero vel nunc eleifend, non aliquet velit iaculis.
+                    </p>
+                    <figure class="col6">
+                        <picture>
+                            <!--[if IE 9]><video style="display: none;"><![endif]-->
+                            <source srcset="photos/bench-desktop.jpg" media="(min-width: 1140px)">
+                            <source srcset="photos/bench-tablet.jpg" media="(min-width 640px)">
+                            <source srcset="photos/bench-phone.jpg">
+                            <!--[if IE 9]></video><![endif]-->
+                            <img srcset="phone.jpg" alt="description">
+                        </picture>
+                    </figure>
+                    <p>Sed eu porta est. Donec egestas arcu sit amet dolor imperdiet, eget eleifend odio maximus. Aenean non nulla malesuada, hendrerit lectus in, volutpat dui. Nullam quam purus, vulputate eu lectus eu, blandit tempus lacus. Phasellus pulvinar in nisi et laoreet. Aenean quis sem mi. In ut faucibus ex. Nunc eu nibh sed mauris blandit auctor a id diam. Aliquam tempus malesuada tortor. Nunc pretium sem vitae est congue, non ullamcorper magna pellentesque. Sed eget pulvinar lectus. Maecenas id lorem pretium, pulvinar magna in, egestas tortor. Etiam in ante enim. Donec feugiat, massa eget interdum convallis, nisi sapien porttitor tortor, in egestas ligula mi id lorem. Nulla quis nisl id nulla consectetur lobortis at nec eros.    </p>
+
+                </div>
             </div>
             <div class="row">
                 <div class="column-6">
@@ -70,6 +109,10 @@
 
                         Ex hinc quodsi probatus mei. Nam no prima suscipit ullamcorper, vix an iusto legere ridens. Detracto noluisse te vix, sint iuvaret singulis pro eu. In liber feugait cotidieque eum, te oratio quaeque democritum nam. Eros assentior expetendis mea in.
                     </p>
+                    <figure class="col4">
+                        <img src="photos\hearts.jpg" />
+                        <figcaption>Lollipop Heart</figcaption>
+                    </figure>
                 </div>
                 <div class="column-6">
                     <p>
@@ -85,7 +128,8 @@
                         Ex hinc quodsi probatus mei. Nam no prima suscipit ullamcorper, vix an iusto legere ridens. Detracto noluisse te vix, sint iuvaret singulis pro eu. In liber feugait cotidieque eum, te oratio quaeque democritum nam. Eros assentior expetendis mea in.
                     </p>
                 </div>
-            </div><div class="row">
+            </div>
+            <div class="row">
                 <div class="column-4">
                     <p>
                         LEFT SIDE
@@ -96,7 +140,8 @@
 
                         Ex hinc quodsi probatus mei. Nam no prima suscipit ullamcorper, vix an iusto legere ridens. Detracto noluisse te vix, sint iuvaret singulis pro eu. In liber feugait cotidieque eum, te oratio quaeque democritum nam. Eros assentior expetendis mea in.
                     </p>
-                </div><div class="column-4">
+                </div>
+                <div class="column-4">
                     <p>
                         CENTER
                         Lorem ipsum dolor sit amet, elit volutpat no duo, an ius eligendi percipit. Detracto lobortis in quo, qui ei velit ridens reformidans, cu accusata delicatissimi vim. Mea ut ponderum sententiae quaerendum, dicunt mollis no est. Mei ne illum repudiare. Perfecto laboramus sententiae pri et, iuvaret inimicus vim ut. Sea summo assentior an, an quidam nemore laoreet duo.
@@ -128,13 +173,13 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div id="footerWrapper">
+            <footer>
+                put stuff here
+            </footer>
 
-            <div id="footerWrapper">
-                <footer>
-                    put stuff here
-                </footer>
-
-            </div>
+        </div>
 
 
     </body>
