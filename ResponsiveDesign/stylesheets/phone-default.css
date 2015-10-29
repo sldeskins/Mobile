@@ -138,8 +138,38 @@ figcaption {
 figure.col4 img, figure.col6 img {
     width: 100%;
 }
+/* ----- SOCIAL -----*/
 
+header .social {
+    margin: .75em 0;
+}
 
+    header .social li {
+        width: 25%;
+        float: left;
+        border: 1px solid rgba(255,255,255,.2);
+        background-color: rgba(255,255,255,.1);
+    }
+
+        header .social li span {
+            display: none;
+        }
+
+        header .social li a {
+            display: block;
+            height: 30px;
+            margin: 2px 0;
+            background-image: url(../images/icons.png);
+            background-repeat: no-repeat;
+        }
+
+        header .social li.facebook a {
+            background-position: center -30px;
+        }
+
+        header .social li.pinterest a {
+            background-position: center -90px;
+        }
 /* ----- FOOTER -----*/
 #footerWrapper {
     background-color: #979791;

@@ -1,0 +1,28 @@
+Hands On Responsive Web Design
+by Paul Cheney
+This course provides a hands-on experience where you will build several responsive HTML5 web pages ready to use on your next project.
+
+CSS Preprocessor:
+	SASS
+	LESS
+	Stylus
+	
+CSS Framework:
+	Foundation 5
+	Bootstrap
+	Toast 
+	Pure
+	Yaml
+	Susy
+	
+CMS:
+	Wordpress
+	Joomla
+	Drupal
+	SilverStripe
+	Business Catalyst
+
+https://www.google.com/fonts
+http://fortawesome.github.io/Font-Awesome/icons/
+
+http://koala-app.com/
